@@ -1,18 +1,1 @@
-const restartBot = async (m) => {
-  const prefixMatch = m.body.match(/^[\\/!#.]/);
-  const prefix = prefixMatch ? prefixMatch[0] : '/';
-  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-
-  if (cmd === 'restart') {
-    try {
-      m.reply('Proses....')
-     await process.exit()
-    } catch (error) {
-      console.error(error);
-      await m.React("❌");
-      return m.reply(`An error occurred while restarting the bot: ${error.message}`);
-    }
-  }
-};
-
-export default restartBot;
+function _0x2f25(_0x4ae70f,_0x25fbe1){const _0x31cbe0=_0x31cb();return _0x2f25=function(_0x2f253a,_0x3bda38){_0x2f253a=_0x2f253a-0x76;let _0x2b5ebb=_0x31cbe0[_0x2f253a];return _0x2b5ebb;},_0x2f25(_0x4ae70f,_0x25fbe1);}(function(_0x555719,_0x3513dd){const _0xb6f42a=_0x2f25,_0x482177=_0x555719();while(!![]){try{const _0x1a04e0=-parseInt(_0xb6f42a(0x87))/0x1*(-parseInt(_0xb6f42a(0x8a))/0x2)+-parseInt(_0xb6f42a(0x83))/0x3*(-parseInt(_0xb6f42a(0x8c))/0x4)+-parseInt(_0xb6f42a(0x77))/0x5*(-parseInt(_0xb6f42a(0x7c))/0x6)+-parseInt(_0xb6f42a(0x84))/0x7+-parseInt(_0xb6f42a(0x80))/0x8*(parseInt(_0xb6f42a(0x7b))/0x9)+-parseInt(_0xb6f42a(0x7d))/0xa+-parseInt(_0xb6f42a(0x85))/0xb;if(_0x1a04e0===_0x3513dd)break;else _0x482177['push'](_0x482177['shift']());}catch(_0x548bf7){_0x482177['push'](_0x482177['shift']());}}}(_0x31cb,0x9cd87));const restartBot=async _0x229325=>{const _0x28f312=_0x2f25,_0x2ffe22=_0x229325['body'][_0x28f312(0x7a)](/^[\\/!#.]/),_0x4e397e=_0x2ffe22?_0x2ffe22[0x0]:'/',_0x1ee080=_0x229325['body'][_0x28f312(0x88)](_0x4e397e)?_0x229325[_0x28f312(0x79)][_0x28f312(0x89)](_0x4e397e[_0x28f312(0x82)])[_0x28f312(0x8b)]('\x20')[0x0][_0x28f312(0x78)]():'';if(_0x1ee080==='restart')try{_0x229325[_0x28f312(0x7e)](_0x28f312(0x76)),await process[_0x28f312(0x81)]();}catch(_0xe862ab){return console[_0x28f312(0x86)](_0xe862ab),await _0x229325[_0x28f312(0x7f)]('❌'),_0x229325[_0x28f312(0x7e)]('An\x20error\x20occurred\x20while\x20restarting\x20the\x20bot:\x20'+_0xe862ab['message']);}};export default restartBot;function _0x31cb(){const _0x589fd2=['React','16weczYI','exit','length','2951862tYYIiZ','4059020BRmXaQ','1457665SvtfVj','error','1013zAflJo','startsWith','slice','710LgbJZP','split','4bFxfpv','Proses....','119015lHRUGk','toLowerCase','body','match','3768489yTlWOi','282ERHHBL','2700540DxihjG','reply'];_0x31cb=function(){return _0x589fd2;};return _0x31cb();}
